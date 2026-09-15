@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: fifo_request_buffer</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_fifo_request_buffer'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_fifo_request_buffer')">fifo_request_buffer</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 60.46</td>
+<td class="s7 cl rt"><a href="mod4.html#Line" > 73.68</a></td>
+<td class="s4 cl rt"><a href="mod4.html#Cond" > 41.18</a></td>
+<td class="s4 cl rt"><a href="mod4.html#Toggle" > 46.99</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod4.html#Branch" > 80.00</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/sveri/samvlsi/railway_track/05_Verification/Simulation_Scripts/../../04_RTL_Design/src/fifo_request_buffer.v')">/home/sveri/samvlsi/railway_track/05_Verification/Simulation_Scripts/../../04_RTL_Design/src/fifo_request_buffer.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod4.html#inst_tag_4"  onclick="showContent('inst_tag_4')">railway_top_tb.DUT.U_FIFO</a></td>
+<td class="s6 cl rt"> 60.46</td>
+<td class="s7 cl rt"><a href="mod4.html#Line" > 73.68</a></td>
+<td class="s4 cl rt"><a href="mod4.html#Cond" > 41.18</a></td>
+<td class="s4 cl rt"><a href="mod4.html#Toggle" > 46.99</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod4.html#Branch" > 80.00</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_fifo_request_buffer'>
+<hr>
+<a name="inst_tag_4"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_4" >railway_top_tb.DUT.U_FIFO</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 60.46</td>
+<td class="s7 cl rt"><a href="mod4.html#Line" > 73.68</a></td>
+<td class="s4 cl rt"><a href="mod4.html#Cond" > 41.18</a></td>
+<td class="s4 cl rt"><a href="mod4.html#Toggle" > 46.99</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod4.html#Branch" > 80.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 60.46</td>
+<td class="s7 cl rt"> 73.68</td>
+<td class="s4 cl rt"> 41.18</td>
+<td class="s4 cl rt"> 46.99</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 80.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s5 cl rt"> 54.42</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 56.67</td>
+<td class="s5 cl rt"> 52.17</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod2.html#inst_tag_2" >DUT</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td colspan=7>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_fifo_request_buffer'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod4.html" >fifo_request_buffer</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s7"><td class="lf">TOTAL</td><td></td><td>19</td><td>14</td><td>73.68</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>63</td><td>19</td><td>14</td><td>73.68</td></tr>
+</table>
+<pre class="code"><br clear=all>
+62                      
+63         1/1              if(reset)
+64                          begin
+65                      
+66         1/1                  write_pointer &lt;= 4'd0;
+67         1/1                  read_pointer  &lt;= 4'd0;
+68         1/1                  count         &lt;= 5'd0;
+69         1/1                  packet_out    &lt;= 32'd0;
+70                      
+71                          end
+72                      
+73                          else
+74                          begin
+75                      
+76                      
+77                              //--------------------------------------------------
+78                              // Write Operation
+79                              //--------------------------------------------------
+80                      
+81         1/1                  if(request_valid &amp;&amp; !fifo_full &amp;&amp; !read_enable)
+82                              begin
+83                      
+84         1/1                      fifo_mem[write_pointer] &lt;= request_packet_in;
+85                      
+86         1/1                      write_pointer &lt;= write_pointer + 1'b1;
+87                      
+88         1/1                      count &lt;= count + 1'b1;
+89                      
+90                              end
+91                      
+92                      
+93                              //--------------------------------------------------
+94                              // Read Operation
+95                              //--------------------------------------------------
+96                      
+97         1/1                  else if(read_enable &amp;&amp; !fifo_empty &amp;&amp; !request_valid)
+98                              begin
+99                      
+100        1/1                      packet_out &lt;= fifo_mem[read_pointer];
+101                     
+102        1/1                      read_pointer &lt;= read_pointer + 1'b1;
+103                     
+104        1/1                      count &lt;= count - 1'b1;
+105                     
+106                             end
+107                     
+108                     
+109                             //--------------------------------------------------
+110                             // Simultaneous Read and Write
+111                             //--------------------------------------------------
+112                     
+113        1/1                  else if(request_valid &amp;&amp; read_enable &amp;&amp;
+114                                     !fifo_full &amp;&amp; !fifo_empty)
+115                             begin
+116                     
+117        <font color = "red">0/1     ==>              fifo_mem[write_pointer] &lt;= request_packet_in;</font>
+118                     
+119        <font color = "red">0/1     ==>              write_pointer &lt;= write_pointer + 1'b1;</font>
+120                     
+121                     
+122        <font color = "red">0/1     ==>              packet_out &lt;= fifo_mem[read_pointer];</font>
+123                     
+124        <font color = "red">0/1     ==>              read_pointer &lt;= read_pointer + 1'b1;</font>
+125                     
+126                     
+127        <font color = "red">0/1     ==>              count &lt;= count;</font>
+128                     
+129                             end
+                        MISSING_ELSE
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod4.html" >fifo_request_buffer</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s4"><td class="lf">Conditions</td><td>17</td><td>7</td><td>41.18</td></tr>
+<tr class="s4"><td class="lf">Logical</td><td>17</td><td>7</td><td>41.18</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       52
+ EXPRESSION (count == 5'd16)
+            --------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       53
+ EXPRESSION (count == 5'b0)
+            -------1-------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       81
+ EXPRESSION (request_valid &amp;&amp; ((!fifo_full)) &amp;&amp; ((!read_enable)))
+             ------1------    -------2------    --------3-------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       97
+ EXPRESSION (read_enable &amp;&amp; ((!fifo_empty)) &amp;&amp; ((!request_valid)))
+             -----1-----    -------2-------    ---------3--------
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       113
+ EXPRESSION (request_valid &amp;&amp; read_enable &amp;&amp; ((!fifo_full)) &amp;&amp; ((!fifo_empty)))
+             ------1------    -----2-----    -------3------    -------4-------
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod4.html" >fifo_request_buffer</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s3">
+<td>Totals</td>
+<td class="rt">11</td>
+<td class="rt">4</td>
+<td class="rt">36.36 </td>
+</tr><tr class="s4">
+<td>Total Bits</td>
+<td class="rt">166</td>
+<td class="rt">78</td>
+<td class="rt">46.99 </td>
+</tr><tr class="s4">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">83</td>
+<td class="rt">41</td>
+<td class="rt">49.40 </td>
+</tr><tr class="s4">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">83</td>
+<td class="rt">37</td>
+<td class="rt">44.58 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s5">
+<td>Ports</td>
+<td class="rt">7</td>
+<td class="rt">4</td>
+<td class="rt">57.14 </td>
+</tr><tr class="s4">
+<td>Port Bits</td>
+<td class="rt">138</td>
+<td class="rt">66</td>
+<td class="rt">47.83 </td>
+</tr><tr class="s4">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">69</td>
+<td class="rt">34</td>
+<td class="rt">49.28 </td>
+</tr><tr class="s4">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">69</td>
+<td class="rt">32</td>
+<td class="rt">46.38 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Signals</td>
+<td class="rt">4</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s4">
+<td>Signal Bits</td>
+<td class="rt">28</td>
+<td class="rt">12</td>
+<td class="rt">42.86 </td>
+</tr><tr class="s5">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">14</td>
+<td class="rt">7</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s3">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">14</td>
+<td class="rt">5</td>
+<td class="rt">35.71 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>request_packet_in[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>request_packet_in[6:1]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>request_packet_in[8:7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>request_packet_in[17:9]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>request_packet_in[31:18]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>request_valid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>read_enable</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>packet_out[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[5:1]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[8:7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[13:9]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[14]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[16:15]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[17]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>packet_out[31:18]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>fifo_empty</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>write_pointer[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>write_pointer[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>write_pointer[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>read_pointer[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>read_pointer[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>read_pointer[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>count[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>count[4:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>fifo_full</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod4.html" >fifo_request_buffer</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Branches</td>
+<td></td>
+<td class="rt">5</td>
+<td class="rt">4</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s8">
+<td>IF</td>
+<td class="rt">63</td>
+<td class="rt">5</td>
+<td class="rt">4</td>
+<td class="rt">80.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+63             if(reset)
+               <font color = "green">-1-</font>  
+64             begin
+65         
+66                 write_pointer <= 4'd0;
+           <font color = "green">        ==></font>
+67                 read_pointer  <= 4'd0;
+68                 count         <= 5'd0;
+69                 packet_out    <= 32'd0;
+70         
+71             end
+72         
+73             else
+74             begin
+75         
+76         
+77                 //--------------------------------------------------
+78                 // Write Operation
+79                 //--------------------------------------------------
+80         
+81                 if(request_valid && !fifo_full && !read_enable)
+                   <font color = "green">-2-</font>                      
+82                 begin
+83         
+84                     fifo_mem[write_pointer] <= request_packet_in;
+           <font color = "green">            ==></font>
+85         
+86                     write_pointer <= write_pointer + 1'b1;
+87         
+88                     count <= count + 1'b1;
+89         
+90                 end
+91         
+92         
+93                 //--------------------------------------------------
+94                 // Read Operation
+95                 //--------------------------------------------------
+96         
+97                 else if(read_enable && !fifo_empty && !request_valid)
+                        <font color = "green">-3-</font>                    
+98                 begin
+99         
+100                    packet_out <= fifo_mem[read_pointer];
+           <font color = "green">            ==></font>
+101        
+102                    read_pointer <= read_pointer + 1'b1;
+103        
+104                    count <= count - 1'b1;
+105        
+106                end
+107        
+108        
+109                //--------------------------------------------------
+110                // Simultaneous Read and Write
+111                //--------------------------------------------------
+112        
+113                else if(request_valid && read_enable &&
+                        <font color = "red">-4-</font>  
+114                        !fifo_full && !fifo_empty)
+115                begin
+116        
+117                    fifo_mem[write_pointer] <= request_packet_in;
+           <font color = "red">            ==></font>
+118        
+119                    write_pointer <= write_pointer + 1'b1;
+120        
+121        
+122                    packet_out <= fifo_mem[read_pointer];
+123        
+124                    read_pointer <= read_pointer + 1'b1;
+125        
+126        
+127                    count <= count;
+128        
+129                end
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_4">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_fifo_request_buffer">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

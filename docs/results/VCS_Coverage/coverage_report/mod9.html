@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: train_request_manager</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_train_request_manager'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_train_request_manager')">train_request_manager</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 82.73</td>
+<td class="s9 cl rt"><a href="mod9.html#Line" > 96.67</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod9.html#Toggle" > 70.14</a></td>
+<td class="s7 cl rt"><a href="mod9.html#FSM" > 70.00</a></td>
+<td class="s9 cl rt"><a href="mod9.html#Branch" > 94.12</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/sveri/samvlsi/railway_track/05_Verification/Simulation_Scripts/../../04_RTL_Design/src/train_request_manager.v')">/home/sveri/samvlsi/railway_track/05_Verification/Simulation_Scripts/../../04_RTL_Design/src/train_request_manager.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod9.html#inst_tag_9"  onclick="showContent('inst_tag_9')">railway_top_tb.DUT.U1</a></td>
+<td class="s8 cl rt"> 82.73</td>
+<td class="s9 cl rt"><a href="mod9.html#Line" > 96.67</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod9.html#Toggle" > 70.14</a></td>
+<td class="s7 cl rt"><a href="mod9.html#FSM" > 70.00</a></td>
+<td class="s9 cl rt"><a href="mod9.html#Branch" > 94.12</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_train_request_manager'>
+<hr>
+<a name="inst_tag_9"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_9" >railway_top_tb.DUT.U1</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 82.73</td>
+<td class="s9 cl rt"><a href="mod9.html#Line" > 96.67</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod9.html#Toggle" > 70.14</a></td>
+<td class="s7 cl rt"><a href="mod9.html#FSM" > 70.00</a></td>
+<td class="s9 cl rt"><a href="mod9.html#Branch" > 94.12</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s8 cl rt"> 82.73</td>
+<td class="s9 cl rt"> 96.67</td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"> 70.14</td>
+<td class="s7 cl rt"> 70.00</td>
+<td class="s9 cl rt"> 94.12</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s5 cl rt"> 54.42</td>
+<td class="wht cl rt"></td>
+<td class="s5 cl rt"> 56.67</td>
+<td class="s5 cl rt"> 52.17</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod2.html#inst_tag_2" >DUT</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td colspan=7>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_train_request_manager'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod9.html" >train_request_manager</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>30</td><td>29</td><td>96.67</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>39</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s9"><td class="lf">ALWAYS</td><td>53</td><td>14</td><td>13</td><td>92.86</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>122</td><td>13</td><td>13</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+38                      begin
+39         1/1              if(reset)
+40         1/1                  current_state &lt;= `IDLE;
+41                          else
+42         1/1                  current_state &lt;= next_state;
+43                      end
+44                      
+45                      
+46                      //--------------------------------------------------
+47                      // Next State Logic
+48                      //--------------------------------------------------
+49                      
+50                      always @(*)
+51                      begin
+52                      
+53         1/1              next_state = current_state;
+54                      
+55         1/1              case(current_state)
+56                      
+57                              `IDLE:
+58                              begin
+59         1/1                      if(train_request)
+60         1/1                          next_state = `RECEIVE_REQUEST;
+                        MISSING_ELSE
+61                              end
+62                      
+63                      
+64                              `RECEIVE_REQUEST:
+65                              begin
+66         1/1                      next_state = `VALIDATE_REQUEST;
+67                              end
+68                      
+69                      
+70                              `VALIDATE_REQUEST:
+71                              begin
+72                      
+73         1/1                  if(train_count &gt;= 8)
+74         1/1                     next_state = `ERROR_STATE;
+75                      
+76         1/1                  else if(train_id &lt; 6'd32)
+77         1/1                     next_state = `GENERATE_PACKET;
+78                      
+79                              else
+80         <font color = "red">0/1     ==>             next_state = `ERROR_STATE;</font>
+81                      
+82                              end
+83                      
+84                      
+85                              `GENERATE_PACKET:
+86                              begin
+87         1/1                      next_state = `SEND_TO_FIFO;
+88                              end
+89                      
+90                      
+91                              `SEND_TO_FIFO:
+92                              begin
+93         1/1                      next_state = `IDLE;
+94                              end
+95                      
+96                      
+97                              `ERROR_STATE:
+98                              begin
+99         1/1                      next_state = `IDLE;
+100                             end
+101                     
+102                     
+103                             default:
+104                             begin
+105        1/1                      next_state = `IDLE;
+106                             end
+107                     
+108                     
+109                         endcase
+110                     
+111                     end
+112                     
+113                     
+114                     
+115                     //--------------------------------------------------
+116                     // Output Logic
+117                     //--------------------------------------------------
+118                     
+119                     always @(posedge clk)
+120                     begin
+121                     
+122        1/1              if(reset)
+123                         begin
+124                     
+125        1/1                  request_packet &lt;= 32'd0;
+126        1/1                  request_valid  &lt;= 1'b0;
+127        1/1                  error_flag     &lt;= 1'b0;
+128                     
+129                         end
+130                     
+131                         else
+132                         begin
+133                     
+134        1/1                  request_valid &lt;= 1'b0;
+135        1/1                  error_flag    &lt;= 1'b0;
+136                     
+137                     
+138        1/1                  case(current_state)
+139                     
+140                     
+141                                 //--------------------------------------------------
+142                                 // Generate 32-bit Train Request Packet
+143                                 //--------------------------------------------------
+144                                 //
+145                                 // Packet Format:
+146                                 //
+147                                 // [31:21] Reserved
+148                                 // [20:15] Train ID
+149                                 // [14:12] Entry Track
+150                                 // [11]    Direction
+151                                 // [10:9]  Train Type
+152                                 // [8]     Emergency Flag
+153                                 // [7:0]   Timestamp
+154                                 //
+155                                 //--------------------------------------------------
+156                     
+157                                 `GENERATE_PACKET:
+158                                 begin
+159                     
+160        1/1                          request_packet &lt;=
+161                                     {
+162                                         11'b0,
+163                                         train_id,
+164                                         entry_track,
+165                                         direction,
+166                                         train_type,
+167                                         emergency_flag,
+168                                         timestamp
+169                                     };
+170                     
+171                                 end
+172                     
+173                     
+174                     
+175                                 //--------------------------------------------------
+176                                 // Send Packet to FIFO
+177                                 //--------------------------------------------------
+178                     
+179                                 `SEND_TO_FIFO:
+180                                 begin
+181                     
+182        1/1                          request_valid &lt;= 1'b1;
+183                     
+184                                 end
+185                     
+186                     
+187                     
+188                                 //--------------------------------------------------
+189                                 // Invalid Request
+190                                 //--------------------------------------------------
+191                     
+192                                 `ERROR_STATE:
+193                                 begin
+194                     
+195        1/1                          request_packet &lt;= 32'd0;
+196        1/1                          error_flag     &lt;= 1'b1;
+197                     
+198                                 end
+199                     
+200                     
+201                     
+202                                 default:
+203                                 begin
+204                     
+205        1/1                          request_valid &lt;= 1'b0;
+206        1/1                          error_flag    &lt;= 1'b0;
+</pre>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod9.html" >train_request_manager</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s6">
+<td>Totals</td>
+<td class="rt">15</td>
+<td class="rt">10</td>
+<td class="rt">66.67 </td>
+</tr><tr class="s7">
+<td>Total Bits</td>
+<td class="rt">144</td>
+<td class="rt">101</td>
+<td class="rt">70.14 </td>
+</tr><tr class="s7">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">72</td>
+<td class="rt">51</td>
+<td class="rt">70.83 </td>
+</tr><tr class="s6">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">72</td>
+<td class="rt">50</td>
+<td class="rt">69.44 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s6">
+<td>Ports</td>
+<td class="rt">13</td>
+<td class="rt">8</td>
+<td class="rt">61.54 </td>
+</tr><tr class="s6">
+<td>Port Bits</td>
+<td class="rt">132</td>
+<td class="rt">89</td>
+<td class="rt">67.42 </td>
+</tr><tr class="s6">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">66</td>
+<td class="rt">45</td>
+<td class="rt">68.18 </td>
+</tr><tr class="s6">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">66</td>
+<td class="rt">44</td>
+<td class="rt">66.67 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Signals</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Signal Bits</td>
+<td class="rt">12</td>
+<td class="rt">12</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_request</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_count[5:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_count[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_count[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_id[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_id[4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_id[5]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>entry_track[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>direction</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>train_type[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>emergency_flag</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>timestamp[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>timestamp[6:1]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>timestamp[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>request_packet[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>request_packet[6:1]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>request_packet[8:7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>request_packet[17:9]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>request_packet[31:18]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>request_valid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>error_flag</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>current_state[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>next_state[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod9.html" >train_request_manager</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: current_state</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+<td>(Not included in score)</td>
+</tr><tr class="s7">
+<td>Transitions</td>
+<td class="rt">10</td>
+<td class="rt">7</td>
+<td class="rt">70.00 </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: current_state</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>ERROR_STATE</td>
+<td class="rt">74</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>GENERATE_PACKET</td>
+<td class="rt">77</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>IDLE</td>
+<td class="rt">40</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>RECEIVE_REQUEST</td>
+<td class="rt">60</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>SEND_TO_FIFO</td>
+<td class="rt">87</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>VALIDATE_REQUEST</td>
+<td class="rt">66</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>ERROR_STATE->IDLE</td>
+<td class="rt">40</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>GENERATE_PACKET->IDLE</td>
+<td class="rt">40</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>GENERATE_PACKET->SEND_TO_FIFO</td>
+<td class="rt">87</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>IDLE->RECEIVE_REQUEST</td>
+<td class="rt">60</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>RECEIVE_REQUEST->IDLE</td>
+<td class="rt">40</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>RECEIVE_REQUEST->VALIDATE_REQUEST</td>
+<td class="rt">66</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>SEND_TO_FIFO->IDLE</td>
+<td class="rt">40</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>VALIDATE_REQUEST->ERROR_STATE</td>
+<td class="rt">74</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>VALIDATE_REQUEST->GENERATE_PACKET</td>
+<td class="rt">77</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>VALIDATE_REQUEST->IDLE</td>
+<td class="rt">40</td>
+<td>Not&nbsp;Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod9.html" >train_request_manager</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">17</td>
+<td class="rt">16</td>
+<td class="rt">94.12 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">39</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td>CASE</td>
+<td class="rt">55</td>
+<td class="rt">10</td>
+<td class="rt">9</td>
+<td class="rt">90.00 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">122</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+39             if(reset)
+               <font color = "green">-1-</font>  
+40                 current_state <= `IDLE;
+           <font color = "green">        ==></font>
+41             else
+42                 current_state <= next_state;
+           <font color = "green">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+55             case(current_state)
+               <font color = "green">-1-</font>  
+56         
+57                 `IDLE:
+58                 begin
+59                     if(train_request)
+                       <font color = "green">-2-</font>  
+60                         next_state = `RECEIVE_REQUEST;
+           <font color = "green">                ==></font>
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+61                 end
+62         
+63         
+64                 `RECEIVE_REQUEST:
+65                 begin
+66                     next_state = `VALIDATE_REQUEST;
+           <font color = "green">            ==></font>
+67                 end
+68         
+69         
+70                 `VALIDATE_REQUEST:
+71                 begin
+72         
+73                 if(train_count >= 8)
+                   <font color = "green">-3-</font>  
+74                    next_state = `ERROR_STATE;
+           <font color = "green">           ==></font>
+75         
+76                 else if(train_id < 6'd32)
+                        <font color = "red">-4-</font>  
+77                    next_state = `GENERATE_PACKET;
+           <font color = "green">           ==></font>
+78         
+79                 else
+80                    next_state = `ERROR_STATE;
+           <font color = "red">           ==></font>
+81         
+82                 end
+83         
+84         
+85                 `GENERATE_PACKET:
+86                 begin
+87                     next_state = `SEND_TO_FIFO;
+           <font color = "green">            ==></font>
+88                 end
+89         
+90         
+91                 `SEND_TO_FIFO:
+92                 begin
+93                     next_state = `IDLE;
+           <font color = "green">            ==></font>
+94                 end
+95         
+96         
+97                 `ERROR_STATE:
+98                 begin
+99                     next_state = `IDLE;
+           <font color = "green">            ==></font>
+100                end
+101        
+102        
+103                default:
+104                begin
+105                    next_state = `IDLE;
+           <font color = "green">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>3'b0 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'b0 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'b1 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'd2 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'd2 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'd2 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'd3 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'd4 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'd5 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+122            if(reset)
+               <font color = "green">-1-</font>  
+123            begin
+124        
+125                request_packet <= 32'd0;
+           <font color = "green">        ==></font>
+126                request_valid  <= 1'b0;
+127                error_flag     <= 1'b0;
+128        
+129            end
+130        
+131            else
+132            begin
+133        
+134                request_valid <= 1'b0;
+135                error_flag    <= 1'b0;
+136        
+137        
+138                case(current_state)
+                   <font color = "green">-2-</font>  
+139        
+140        
+141                    //--------------------------------------------------
+142                    // Generate 32-bit Train Request Packet
+143                    //--------------------------------------------------
+144                    //
+145                    // Packet Format:
+146                    //
+147                    // [31:21] Reserved
+148                    // [20:15] Train ID
+149                    // [14:12] Entry Track
+150                    // [11]    Direction
+151                    // [10:9]  Train Type
+152                    // [8]     Emergency Flag
+153                    // [7:0]   Timestamp
+154                    //
+155                    //--------------------------------------------------
+156        
+157                    `GENERATE_PACKET:
+158                    begin
+159        
+160                        request_packet <=
+           <font color = "green">                ==></font>
+161                        {
+162                            11'b0,
+163                            train_id,
+164                            entry_track,
+165                            direction,
+166                            train_type,
+167                            emergency_flag,
+168                            timestamp
+169                        };
+170        
+171                    end
+172        
+173        
+174        
+175                    //--------------------------------------------------
+176                    // Send Packet to FIFO
+177                    //--------------------------------------------------
+178        
+179                    `SEND_TO_FIFO:
+180                    begin
+181        
+182                        request_valid <= 1'b1;
+           <font color = "green">                ==></font>
+183        
+184                    end
+185        
+186        
+187        
+188                    //--------------------------------------------------
+189                    // Invalid Request
+190                    //--------------------------------------------------
+191        
+192                    `ERROR_STATE:
+193                    begin
+194        
+195                        request_packet <= 32'd0;
+           <font color = "green">                ==></font>
+196                        error_flag     <= 1'b1;
+197        
+198                    end
+199        
+200        
+201        
+202                    default:
+203                    begin
+204        
+205                        request_valid <= 1'b0;
+           <font color = "green">                ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>3'd3 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>3'd4 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>3'd5 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_9">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_train_request_manager">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

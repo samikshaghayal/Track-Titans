@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: railway_top_tb</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_railway_top_tb'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_railway_top_tb')">railway_top_tb</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 92.19</td>
+<td class="s10 cl rt"><a href="mod7.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod7.html#Toggle" > 84.38</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/sveri/samvlsi/railway_track/05_Verification/Simulation_Scripts/../tb/railway_top_tb.v')">/home/sveri/samvlsi/railway_track/05_Verification/Simulation_Scripts/../tb/railway_top_tb.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod7.html#inst_tag_7"  onclick="showContent('inst_tag_7')">railway_top_tb</a></td>
+<td class="s9 cl rt"> 92.19</td>
+<td class="s10 cl rt"><a href="mod7.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod7.html#Toggle" > 84.38</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_railway_top_tb'>
+<hr>
+<a name="inst_tag_7"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_7" >railway_top_tb</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 92.19</td>
+<td class="s10 cl rt"><a href="mod7.html#Line" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod7.html#Toggle" > 84.38</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s6 cl rt"> 69.92</td>
+<td class="s9 cl rt"> 93.11</td>
+<td class="s5 cl rt"> 52.38</td>
+<td class="s5 cl rt"> 52.45</td>
+<td class="s6 cl rt"> 68.75</td>
+<td class="s8 cl rt"> 82.93</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<span class=inst>none</span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod2.html#inst_tag_2" id="tag_urg_inst_2">DUT</a></td>
+<td class="s6 cl rt"> 68.01</td>
+<td class="s8 cl rt"> 85.28</td>
+<td class="s5 cl rt"> 52.38</td>
+<td class="s5 cl rt"> 50.69</td>
+<td class="s6 cl rt"> 68.75</td>
+<td class="s8 cl rt"> 82.93</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_railway_top_tb'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod7.html" >railway_top_tb</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>224</td><td>224</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>115</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">INITIAL</td><td>128</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">INITIAL</td><td>147</td><td>214</td><td>214</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">INITIAL</td><td>602</td><td>6</td><td>6</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+114                     
+115        2/2          always #5 clk = ~clk;
+116                     
+117                     
+118                     //--------------------------------------------------------------
+119                     // 5. FSDB WAVEFORM DUMP
+120                     //--------------------------------------------------------------
+121                     //
+122                     // Creates railway.fsdb for viewing internal signals in Verdi.
+123                     //
+124                     //--------------------------------------------------------------
+125                     
+126                     initial
+127                     begin
+128        1/1              $fsdbDumpfile(&quot;railway.fsdb&quot;);
+129        1/1              $fsdbDumpvars(0, railway_top_tb);
+130                     end
+131                     
+132                     
+133                     //--------------------------------------------------------------
+134                     // 6. MAIN TEST SEQUENCE
+135                     //--------------------------------------------------------------
+136                     
+137                     initial
+138                     begin
+139                     
+140                         //----------------------------------------------------------
+141                         // INITIAL VALUES
+142                         //----------------------------------------------------------
+143                         //
+144                         // All inputs are initialized before starting the tests.
+145                         //
+146                     
+147        1/1              clk = 1'b0;
+148        1/1              reset = 1'b1;
+149                     
+150        1/1              train_request = 1'b0;
+151                     
+152        1/1              train_id = 6'd0;
+153        1/1              entry_track = 3'd0;
+154        1/1              direction = 1'b0;
+155        1/1              train_type = 2'b00;
+156        1/1              emergency_flag = 1'b0;
+157        1/1              timestamp = 8'd0;
+158                     
+159        1/1              track_busy = 1'b0;
+160        1/1              signal_fault = 1'b0;
+161                     
+162                     
+163                         //----------------------------------------------------------
+164                         // RESET
+165                         //----------------------------------------------------------
+166                         //
+167                         // Keep reset active initially so all internal registers
+168                         // of the railway system are initialized.
+169                         //
+170                     
+171        2/2              #20;
+172        1/1              reset = 1'b0;
+173                     
+174                     
+175                         //----------------------------------------------------------
+176                         // TEST 1: NORMAL TRAIN REQUEST
+177                         //----------------------------------------------------------
+178                         //
+179                         // A normal train enters through track 1.
+180                         // Expected:
+181                         //   Request is accepted.
+182                         //   Route is selected.
+183                         //   Safety checks are performed.
+184                         //   Train can eventually move.
+185                         //
+186                     
+187        2/2              #20;
+188                     
+189        1/1              train_id = 6'd1;
+190        1/1              entry_track = 3'd1;
+191        1/1              direction = 1'b0;
+192        1/1              train_type = 2'b01;
+193        1/1              emergency_flag = 1'b0;
+194        1/1              timestamp = 8'd20;
+195                     
+196        1/1              train_request = 1'b1;
+197                     
+198        2/2              #10;
+199                     
+200        1/1              train_request = 1'b0;
+201                     
+202                     
+203                         //----------------------------------------------------------
+204                         // TEST 2: SECOND TRAIN REQUEST
+205                         //----------------------------------------------------------
+206                         //
+207                         // A second train is requested from entry track 2.
+208                         // This checks the request FIFO/scheduler operation.
+209                         //
+210                     
+211        2/2              #60;
+212                     
+213        1/1              train_id = 6'd2;
+214        1/1              entry_track = 3'd2;
+215        1/1              direction = 1'b1;
+216        1/1              train_type = 2'b10;
+217        1/1              emergency_flag = 1'b0;
+218        1/1              timestamp = 8'd50;
+219                     
+220        1/1              train_request = 1'b1;
+221                     
+222        2/2              #10;
+223                     
+224        1/1              train_request = 1'b0;
+225                     
+226                     
+227                         //----------------------------------------------------------
+228                         // TEST 3: ENTRY TRACK 0
+229                         //----------------------------------------------------------
+230                         //
+231                         // Tests route generation for entry track 0.
+232                         //
+233                     
+234        2/2              #40;
+235                     
+236        1/1              train_id = 6'd3;
+237        1/1              entry_track = 3'd0;
+238        1/1              direction = 1'b0;
+239        1/1              train_type = 2'b00;
+240        1/1              emergency_flag = 1'b0;
+241        1/1              timestamp = 8'd60;
+242                     
+243        1/1              train_request = 1'b1;
+244                     
+245        2/2              #10;
+246                     
+247        1/1              train_request = 1'b0;
+248                     
+249                     
+250                         //----------------------------------------------------------
+251                         // TEST 4: ENTRY TRACK 3
+252                         //----------------------------------------------------------
+253                         //
+254                         // Tests another entry route with opposite direction.
+255                         //
+256                     
+257        2/2              #60;
+258                     
+259        1/1              train_id = 6'd4;
+260        1/1              entry_track = 3'd3;
+261        1/1              direction = 1'b1;
+262        1/1              train_type = 2'b01;
+263        1/1              emergency_flag = 1'b0;
+264        1/1              timestamp = 8'd80;
+265                     
+266        1/1              train_request = 1'b1;
+267                     
+268        2/2              #10;
+269                     
+270        1/1              train_request = 1'b0;
+271                     
+272                     
+273                         //----------------------------------------------------------
+274                         // TEST 5: ENTRY TRACK 4
+275                         //----------------------------------------------------------
+276                         //
+277                         // Tests route selection for entry track 4.
+278                         //
+279                     
+280        2/2              #60;
+281                     
+282        1/1              train_id = 6'd5;
+283        1/1              entry_track = 3'd4;
+284        1/1              direction = 1'b0;
+285        1/1              train_type = 2'b10;
+286        1/1              emergency_flag = 1'b0;
+287        1/1              timestamp = 8'd100;
+288                     
+289        1/1              train_request = 1'b1;
+290                     
+291        2/2              #10;
+292                     
+293        1/1              train_request = 1'b0;
+294                     
+295                     
+296                         //----------------------------------------------------------
+297                         // TEST 6: EMERGENCY TRAIN
+298                         //----------------------------------------------------------
+299                         //
+300                         // emergency_flag = 1
+301                         //
+302                         // This checks how the system handles a high-priority
+303                         // emergency train request.
+304                         //
+305                     
+306        2/2              #60;
+307                     
+308        1/1              train_id = 6'd6;
+309        1/1              entry_track = 3'd2;
+310        1/1              direction = 1'b0;
+311        1/1              train_type = 2'b11;
+312        1/1              emergency_flag = 1'b1;
+313        1/1              timestamp = 8'd120;
+314                     
+315        1/1              train_request = 1'b1;
+316                     
+317        2/2              #10;
+318                     
+319        1/1              train_request = 1'b0;
+320                     
+321        2/2              #40;
+322                     
+323        1/1              emergency_flag = 1'b0;
+324                     
+325                     
+326                         //----------------------------------------------------------
+327                         // TEST 7: INVALID TRAIN ID
+328                         //----------------------------------------------------------
+329                         //
+330                         // train_id = 40
+331                         //
+332                         // This checks the error handling of the train request
+333                         // manager for an invalid train ID.
+334                         //
+335                     
+336        2/2              #60;
+337                     
+338        1/1              train_id = 6'd40;
+339        1/1              entry_track = 3'd1;
+340        1/1              direction = 1'b0;
+341        1/1              train_type = 2'b00;
+342        1/1              emergency_flag = 1'b0;
+343        1/1              timestamp = 8'd140;
+344                     
+345        1/1              train_request = 1'b1;
+346                     
+347        2/2              #10;
+348                     
+349        1/1              train_request = 1'b0;
+350                     
+351        2/2              #40;
+352                     
+353                     
+354                         //----------------------------------------------------------
+355                         // TEST 8: TRACK BUSY
+356                         //----------------------------------------------------------
+357                         //
+358                         // track_busy = 1
+359                         //
+360                         // This checks whether the safety logic prevents a route
+361                         // from being considered safe when the track is occupied.
+362                         //
+363                     
+364        2/2              #60;
+365                     
+366        1/1              track_busy = 1'b1;
+367                     
+368        1/1              train_id = 6'd7;
+369        1/1              entry_track = 3'd2;
+370        1/1              direction = 1'b1;
+371        1/1              train_type = 2'b01;
+372        1/1              emergency_flag = 1'b0;
+373        1/1              timestamp = 8'd160;
+374                     
+375        1/1              train_request = 1'b1;
+376                     
+377        2/2              #10;
+378                     
+379        1/1              train_request = 1'b0;
+380                     
+381        2/2              #50;
+382                     
+383        1/1              track_busy = 1'b0;
+384                     
+385                     
+386                         //----------------------------------------------------------
+387                         // TEST 9: SIGNAL FAULT
+388                         //----------------------------------------------------------
+389                         //
+390                         // signal_fault = 1
+391                         //
+392                         // This verifies that the railway system does not allow
+393                         // unsafe train movement when a signal fault exists.
+394                         //
+395                     
+396        2/2              #60;
+397                     
+398        1/1              signal_fault = 1'b1;
+399                     
+400        1/1              train_id = 6'd8;
+401        1/1              entry_track = 3'd3;
+402        1/1              direction = 1'b0;
+403        1/1              train_type = 2'b10;
+404        1/1              emergency_flag = 1'b0;
+405        1/1              timestamp = 8'd180;
+406                     
+407        1/1              train_request = 1'b1;
+408                     
+409        2/2              #10;
+410                     
+411        1/1              train_request = 1'b0;
+412                     
+413        2/2              #50;
+414                     
+415        1/1              signal_fault = 1'b0;
+416                     
+417                     
+418                         //----------------------------------------------------------
+419                         // TEST 10: MULTIPLE TRAIN REQUESTS
+420                         //----------------------------------------------------------
+421                         //
+422                         // Two requests are generated close together.
+423                         // This checks the FIFO and intelligent scheduler.
+424                         //
+425                     
+426        2/2              #60;
+427                     
+428                     
+429                         //----------------------------------------------------------
+430                         // Request 1
+431                         //----------------------------------------------------------
+432                     
+433        1/1              train_id = 6'd9;
+434        1/1              entry_track = 3'd1;
+435        1/1              direction = 1'b0;
+436        1/1              train_type = 2'b01;
+437        1/1              emergency_flag = 1'b0;
+438        1/1              timestamp = 8'd200;
+439                     
+440        1/1              train_request = 1'b1;
+441                     
+442        2/2              #10;
+443                     
+444        1/1              train_request = 1'b0;
+445                     
+446                     
+447                         //----------------------------------------------------------
+448                         // Request 2
+449                         //----------------------------------------------------------
+450                     
+451        2/2              #10;
+452                     
+453        1/1              train_id = 6'd10;
+454        1/1              entry_track = 3'd4;
+455        1/1              direction = 1'b1;
+456        1/1              train_type = 2'b10;
+457        1/1              emergency_flag = 1'b0;
+458        1/1              timestamp = 8'd210;
+459                     
+460        1/1              train_request = 1'b1;
+461                     
+462        2/2              #10;
+463                     
+464        1/1              train_request = 1'b0;
+465                     
+466        2/2              #50;
+467                     
+468                     
+469                             //----------------------------------------------------------
+470                         // TEST 11: DEADLOCK PREVENTION
+471                         //----------------------------------------------------------
+472                     
+473        1/1              $display(&quot;&quot;);
+474        1/1              $display(&quot;==============================================&quot;);
+475        1/1              $display(&quot;TEST 11: DEADLOCK PREVENTION&quot;);
+476        1/1              $display(&quot;==============================================&quot;);
+477                     
+478                         //----------------------------------------------------------
+479                         // Allow previous transactions to complete
+480                         //----------------------------------------------------------
+481                     
+482        2/2              #100;
+483                     
+484                         //----------------------------------------------------------
+485                         // Create an intentional deadlock condition
+486                         //
+487                         // Required condition:
+488                         //
+489                         //   route_valid   = 1
+490                         //   route_locked  = 1
+491                         //   route_number  = safe_route
+492                         //
+493                         //----------------------------------------------------------
+494                     
+495        1/1              $display(&quot;&quot;);
+496        1/1              $display(&quot;Creating intentional deadlock condition...&quot;);
+497                     
+498        1/1              force DUT.route_valid   = 1'b1;
+499        1/1              force DUT.route_locked  = 1'b1;
+500        1/1              force DUT.route_number  = 5'd1;
+501        1/1              force DUT.safe_route    = 5'd1;
+502                     
+503        2/2              #10;
+504                     
+505                         //----------------------------------------------------------
+506                         // Display internal condition
+507                         //----------------------------------------------------------
+508                     
+509        1/1              $display(&quot;&quot;);
+510        1/1              $display(&quot;TEST 11 INTERNAL STATUS&quot;);
+511        1/1              $display(&quot;----------------------------------------------&quot;);
+512        1/1              $display(&quot;Route Valid        : %b&quot;, DUT.route_valid);
+513        1/1              $display(&quot;Route Number       : %0d&quot;, DUT.route_number);
+514        1/1              $display(&quot;Safe Route         : %0d&quot;, DUT.safe_route);
+515        1/1              $display(&quot;Route Locked       : %b&quot;, DUT.route_locked);
+516        1/1              $display(&quot;Waiting Condition  : %b&quot;, DUT.waiting_condition);
+517        1/1              $display(&quot;Deadlock Detected  : %b&quot;, DUT.deadlock_detected);
+518        1/1              $display(&quot;Release Required   : %b&quot;, DUT.release_required);
+519        1/1              $display(&quot;Blocked Route      : %0d&quot;, DUT.blocked_route);
+520        1/1              $display(&quot;----------------------------------------------&quot;);
+521                     
+522        2/2              #10;
+523                     
+524                         //----------------------------------------------------------
+525                         // Final deadlock prevention result
+526                         //----------------------------------------------------------
+527                     
+528        1/1              $display(&quot;&quot;);
+529        1/1              $display(&quot;----------------------------------------------&quot;);
+530        1/1              $display(&quot;DEADLOCK PREVENTION RESULT&quot;);
+531        1/1              $display(&quot;----------------------------------------------&quot;);
+532                     
+533        1/1              $display(&quot;Deadlock Detected : %b&quot;, DUT.deadlock_detected);
+534        1/1              $display(&quot;Waiting Condition : %b&quot;, DUT.waiting_condition);
+535        1/1              $display(&quot;Route Locked      : %b&quot;, DUT.route_locked);
+536        1/1              $display(&quot;Release Required  : %b&quot;, DUT.release_required);
+537        1/1              $display(&quot;Blocked Route     : %0d&quot;, DUT.blocked_route);
+538                     
+539        1/1              $display(&quot;----------------------------------------------&quot;);
+540                     
+541                         //----------------------------------------------------------
+542                         // Release forced signals
+543                         //----------------------------------------------------------
+544                     
+545        1/1              release DUT.route_valid;
+546        1/1              release DUT.route_locked;
+547        1/1              release DUT.route_number;
+548        1/1              release DUT.safe_route;
+549                     
+550        2/2              #10;
+551                     
+552                         //----------------------------------------------------------
+553                         // Give some additional simulation time
+554                         //----------------------------------------------------------
+555                     
+556        2/2              #50;
+557                     
+558                     
+559                         //----------------------------------------------------------
+560                         // END SIMULATION
+561                         //----------------------------------------------------------
+562                     
+563        1/1              $display(&quot;&quot;);
+564        1/1              $display(&quot;==============================================&quot;);
+565        1/1              $display(&quot;ALL TESTS COMPLETED&quot;);
+566        1/1              $display(&quot;==============================================&quot;);
+567                     
+568        2/2              #100;
+569                     
+570        1/1              $finish;
+571                     
+572                     end
+573                     
+574                     
+575                     //--------------------------------------------------------------
+576                     // 7. REAL-TIME INTERNAL SIGNAL MONITOR
+577                     //--------------------------------------------------------------
+578                     //
+579                     // This monitor prints important internal signals whenever any
+580                     // monitored signal changes.
+581                     //
+582                     // Signal meanings:
+583                     //
+584                     // RV  = Route Valid
+585                     // SV  = Safe Valid
+586                     // RS  = Route Safe
+587                     // CR  = Conflict Route
+588                     // RR  = Route Ready
+589                     // RL  = Route Locked
+590                     // WAIT = Waiting Condition
+591                     // DL  = Deadlock Detected
+592                     // REL = Release Required
+593                     // Move = Train Movement
+594                     //
+595                     // These signals are accessed hierarchically through DUT.
+596                     //
+597                     //--------------------------------------------------------------
+598                     
+599                     initial
+600                     begin
+601                     
+602        1/1              $display(&quot;&quot;);
+603        1/1              $display(&quot;==============================================================&quot;);
+604        1/1              $display(&quot;RAILWAY INTERLOCKING SYSTEM SIMULATION&quot;);
+605        1/1              $display(&quot;==============================================================&quot;);
+606                     
+607        1/1              $display(
+608                             &quot;Time\tReq\tRV\tSV\tRS\tCR\tRR\tRL\tWAIT\tDL\tREL\tMove&quot;
+609                         );
+610                     
+611        1/1              $monitor(
+</pre>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod7.html" >railway_top_tb</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Totals</td>
+<td class="rt">17</td>
+<td class="rt">12</td>
+<td class="rt">70.59 </td>
+</tr><tr class="s8">
+<td>Total Bits</td>
+<td class="rt">64</td>
+<td class="rt">54</td>
+<td class="rt">84.38 </td>
+</tr><tr class="s8">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">32</td>
+<td class="rt">27</td>
+<td class="rt">84.38 </td>
+</tr><tr class="s8">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">32</td>
+<td class="rt">27</td>
+<td class="rt">84.38 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s7">
+<td>Signals</td>
+<td class="rt">17</td>
+<td class="rt">12</td>
+<td class="rt">70.59 </td>
+</tr><tr class="s8">
+<td>Signal Bits</td>
+<td class="rt">64</td>
+<td class="rt">54</td>
+<td class="rt">84.38 </td>
+</tr><tr class="s8">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">32</td>
+<td class="rt">27</td>
+<td class="rt">84.38 </td>
+</tr><tr class="s8">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">32</td>
+<td class="rt">27</td>
+<td class="rt">84.38 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>reset</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>train_request</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>train_id[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>train_id[4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>train_id[5]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>entry_track[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>direction</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>train_type[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>emergency_flag</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>timestamp[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>timestamp[6:1]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>timestamp[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>track_busy</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>signal_fault</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>signal_red</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>signal_yellow</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>signal_green</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_left</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_right</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>train_move</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_7">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+  </ul>
+  <ul name="tag_railway_top_tb">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>
