@@ -1,6 +1,6 @@
 # Track-Titans
 
-## FPGA-Based Railway Interlocking and Dynamic Route Control System
+## IDEA TITLE:SMART RAILWAY INTERLOCKING & ROUTE OPTIMIZATION 
 
 Developed by **Team Track Titans** for **SMART INDIA HACKTON**.
 
