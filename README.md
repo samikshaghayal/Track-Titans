@@ -2,7 +2,7 @@
 
 ## FPGA-Based Railway Interlocking and Dynamic Route Control System
 
-Developed by **Team MH Titans** for **VELTRAXX'26 National Design Challenge**.
+Developed by **Team Track Titans** for **SMART INDIA HACKTON**.
 
 ---
 
