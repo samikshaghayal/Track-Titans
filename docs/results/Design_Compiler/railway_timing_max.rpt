@@ -1,0 +1,706 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : railway_top
+Version: T-2022.03-SP5
+Date   : Mon Sep  7 06:59:00 2026
+****************************************
+
+Operating Conditions: tt0p75v25c   Library: saed05rvt_base_tt0p75v25c
+Wire Load Model Mode: top
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U_FIFO/count_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U431/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.05 f
+  U360/OUT (SAEDRVT05_NR3_X1_FA)                          0.03       1.08 r
+  U359/OUT (SAEDRVT05_NR3_X1_FA)                          0.01       1.09 f
+  U504/OUT (SAEDRVT05_NR3_X1_FA)                          0.02       1.11 r
+  U512/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.12 f
+  U391/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.12 r
+  U390/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.13 f
+  U_FIFO/count_reg[4]/D (SAEDRVT05_FDP_X1_FA)             0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U_FIFO/count_reg[4]/CLK (SAEDRVT05_FDP_X1_FA)           0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.67
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U_FIFO/count_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U431/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.05 f
+  U360/OUT (SAEDRVT05_NR3_X1_FA)                          0.03       1.08 r
+  U359/OUT (SAEDRVT05_NR3_X1_FA)                          0.01       1.09 f
+  U508/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.10 r
+  U509/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.10 f
+  U358/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.11 r
+  U401/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.12 f
+  U400/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.12 r
+  U511/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.13 f
+  U_FIFO/count_reg[2]/D (SAEDRVT05_FDP_X1_FA)             0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U_FIFO/count_reg[2]/CLK (SAEDRVT05_FDP_X1_FA)           0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.67
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U_FIFO/count_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U431/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.05 f
+  U360/OUT (SAEDRVT05_NR3_X1_FA)                          0.03       1.08 r
+  U359/OUT (SAEDRVT05_NR3_X1_FA)                          0.01       1.09 f
+  U504/OUT (SAEDRVT05_NR3_X1_FA)                          0.02       1.11 r
+  U395/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.12 f
+  U394/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.12 r
+  U506/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.13 f
+  U_FIFO/count_reg[3]/D (SAEDRVT05_FDP_X1_FA)             0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U_FIFO/count_reg[3]/CLK (SAEDRVT05_FDP_X1_FA)           0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.67
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U_FIFO/count_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U431/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.05 f
+  U360/OUT (SAEDRVT05_NR3_X1_FA)                          0.03       1.08 r
+  U421/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.09 f
+  U398/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.10 r
+  U397/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.10 f
+  U509/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.11 r
+  U368/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.11 f
+  U367/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.12 r
+  U_FIFO/count_reg[1]/D (SAEDRVT05_FDP_X1_FA)             0.00       1.12 r
+  data arrival time                                                  1.12
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U_FIFO/count_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)           0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.68
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U_FIFO/count_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U431/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.05 f
+  U360/OUT (SAEDRVT05_NR3_X1_FA)                          0.03       1.08 r
+  U421/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.09 f
+  U507/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.10 r
+  U366/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.10 f
+  U364/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.11 r
+  U_FIFO/count_reg[0]/D (SAEDRVT05_FDP_X1_FA)             0.00       1.11 r
+  data arrival time                                                  1.11
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U_FIFO/count_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)           0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.69
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.03 r
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.05 f
+  U463/OUT (SAEDRVT05_INV_X1_FA)                          0.02       1.07 r
+  U479/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.07 f
+  U377/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.08 r
+  U486/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.09 f
+  U417/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.09 r
+  U415/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.10 f
+  U10/train_count_reg[2]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.10 f
+  data arrival time                                                  1.10
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[2]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.70
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.03 r
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.05 f
+  U463/OUT (SAEDRVT05_INV_X1_FA)                          0.02       1.07 r
+  U479/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.07 f
+  U377/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.08 r
+  U375/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.09 f
+  U374/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.09 r
+  U480/OUT (SAEDRVT05_INV_X1_FA)                          0.00       1.10 f
+  U10/train_count_reg[1]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.10 f
+  data arrival time                                                  1.10
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.10
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.70
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.03 r
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.05 f
+  U463/OUT (SAEDRVT05_INV_X1_FA)                          0.02       1.07 r
+  U474/OUT (SAEDRVT05_OR2_X1_FA)                          0.01       1.08 r
+  U475/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.08 f
+  U388/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.08 r
+  U386/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.09 f
+  U10/train_count_reg[4]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.09 f
+  data arrival time                                                  1.09
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[4]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.70
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  reset (in)                                              0.00       1.00 r
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.02 f
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.05 r
+  U481/OUT (SAEDRVT05_ND3_X1_FA)                          0.02       1.06 f
+  U488/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.07 r
+  U420/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.08 f
+  U418/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.09 r
+  U10/train_count_reg[7]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.09 r
+  data arrival time                                                  1.09
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[7]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.71
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U11/conflict_route_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U443/OUT (SAEDRVT05_ND2_X1_FA)                          0.02       1.05 f
+  U460/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.06 r
+  U461/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.07 f
+  U462/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.08 r
+  U524/OUT (SAEDRVT05_INV_X1_FA)                          0.00       1.08 f
+  U527/OUT (SAEDRVT05_ND3_X1_FA)                          0.00       1.08 r
+  U11/conflict_route_reg[0]/D (SAEDRVT05_FDP_X1_FA)       0.00       1.08 r
+  data arrival time                                                  1.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U11/conflict_route_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)     0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.71
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  reset (in)                                              0.00       1.00 r
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.02 f
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.05 r
+  U463/OUT (SAEDRVT05_INV_X1_FA)                          0.02       1.07 f
+  U469/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.07 r
+  U414/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.08 f
+  U412/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.08 r
+  U10/train_count_reg[5]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.08 r
+  data arrival time                                                  1.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[5]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.71
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U5/safe_platform_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U443/OUT (SAEDRVT05_ND2_X1_FA)                          0.02       1.05 f
+  U445/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.06 r
+  U452/OUT (SAEDRVT05_AN2_X1_FA)                          0.01       1.07 r
+  U453/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.08 f
+  U457/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.08 r
+  U5/safe_platform_reg[0]/D (SAEDRVT05_FDP_X1_FA)         0.00       1.08 r
+  data arrival time                                                  1.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U5/safe_platform_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.71
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U5/safe_route_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U443/OUT (SAEDRVT05_ND2_X1_FA)                          0.02       1.05 f
+  U445/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.06 r
+  U452/OUT (SAEDRVT05_AN2_X1_FA)                          0.01       1.07 r
+  U453/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.08 f
+  U459/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.08 r
+  U5/safe_route_reg[0]/D (SAEDRVT05_FDP_X1_FA)            0.00       1.08 r
+  data arrival time                                                  1.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U5/safe_route_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)          0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.71
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  reset (in)                                              0.00       1.00 r
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.02 f
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.05 r
+  U481/OUT (SAEDRVT05_ND3_X1_FA)                          0.02       1.06 f
+  U380/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.07 r
+  U378/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.08 f
+  U484/OUT (SAEDRVT05_INV_X1_FA)                          0.00       1.08 r
+  U10/train_count_reg[6]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.08 r
+  data arrival time                                                  1.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[6]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.71
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U12/blocked_route_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U443/OUT (SAEDRVT05_ND2_X1_FA)                          0.02       1.05 f
+  U460/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.06 r
+  U461/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.07 f
+  U462/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       1.08 r
+  U12/blocked_route_reg[0]/D (SAEDRVT05_FDP_X1_FA)        0.00       1.08 r
+  data arrival time                                                  1.08
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U12/blocked_route_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)      0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.72
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U11/conflict_detected_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U443/OUT (SAEDRVT05_ND2_X1_FA)                          0.02       1.05 f
+  U445/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.06 r
+  U522/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.07 f
+  U523/OUT (SAEDRVT05_ND3_X1_FA)                          0.01       1.07 r
+  U11/conflict_detected_reg/D (SAEDRVT05_FDP_X1_FA)       0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U11/conflict_detected_reg/CLK (SAEDRVT05_FDP_X1_FA)     0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.72
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U11/route_safe_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U443/OUT (SAEDRVT05_ND2_X1_FA)                          0.02       1.05 f
+  U445/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.06 r
+  U448/OUT (SAEDRVT05_ND3_X1_FA)                          0.01       1.07 f
+  U451/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       1.07 r
+  U11/route_safe_reg/D (SAEDRVT05_FDP_X1_FA)              0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U11/route_safe_reg/CLK (SAEDRVT05_FDP_X1_FA)            0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.72
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  reset (in)                                              0.00       1.00 r
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.02 f
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.05 r
+  U476/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.06 f
+  U372/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.06 r
+  U370/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.07 f
+  U477/OUT (SAEDRVT05_INV_X1_FA)                          0.00       1.07 r
+  U10/train_count_reg[3]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[3]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.72
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U5/safe_valid_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  U422/OUT (SAEDRVT05_INV_X1_FA)                          0.03       1.03 r
+  U443/OUT (SAEDRVT05_ND2_X1_FA)                          0.02       1.05 f
+  U445/OUT (SAEDRVT05_INV_X1_FA)                          0.01       1.06 r
+  U452/OUT (SAEDRVT05_AN2_X1_FA)                          0.01       1.07 r
+  U5/safe_valid_reg/D (SAEDRVT05_FDP_X1_FA)               0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U5/safe_valid_reg/CLK (SAEDRVT05_FDP_X1_FA)             0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.72
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: U10/train_count_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  reset (in)                                              0.00       1.00 r
+  U385/OUT (SAEDRVT05_NR2_X1_FA)                          0.02       1.02 f
+  U384/OUT (SAEDRVT05_NR2_X1_FA)                          0.03       1.05 r
+  U383/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.06 f
+  U381/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       1.06 r
+  U10/train_count_reg[0]/D (SAEDRVT05_FDP_X1_FA)          0.00       1.06 r
+  data arrival time                                                  1.06
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  U10/train_count_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       9.80 r
+  library setup time                                     -0.01       9.79
+  data required time                                                 9.79
+  --------------------------------------------------------------------------
+  data required time                                                 9.79
+  data arrival time                                                 -1.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.73
+
+
+1

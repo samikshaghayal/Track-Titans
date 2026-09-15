@@ -1,0 +1,39 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03-SP5
+Date:        Mon Sep  7 06:59:00 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     23
+    Unconnected ports (LINT-28)                                    20
+    Shorted outputs (LINT-31)                                       1
+    Constant outputs (LINT-52)                                      2
+--------------------------------------------------------------------------------
+
+Warning: In design 'railway_top', port 'train_id[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'train_id[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'train_id[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'train_id[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'train_id[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'entry_track[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'entry_track[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'entry_track[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'direction' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'train_type[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'train_type[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'emergency_flag' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', port 'timestamp[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'railway_top', output port 'signal_yellow' is connected directly to output port 'switch_right'. (LINT-31)
+Warning: In design 'railway_top', output port 'signal_yellow' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'railway_top', output port 'switch_right' is connected directly to 'logic 0'. (LINT-52)
+1
