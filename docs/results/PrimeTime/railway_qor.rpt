@@ -1,0 +1,49 @@
+****************************************
+Report : qor
+Design : railway_top
+Version: U-2022.12-SP3
+Date   : Mon Sep  7 07:02:52 2026
+****************************************
+
+  Timing Path Group 'clk' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            8
+  Critical Path Length:                    1.13
+  Critical Path Slack:                     8.67
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                    0.02
+  Critical Path Slack:                    -0.03
+  Total Negative Slack:                   -0.85
+  No. of Violating Paths:                    38
+  ---------------------------------------------
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:                   0.00
+  Total cell area:                         6.92
+  Design Area:                             6.92
+  ---------------------------------------------
+
+
+  Cell & Pin Count
+  ---------------------------------------------
+  Pin Count:                                720
+  Hierarchical Cell Count:                    0
+  Hierarchical Port Count:                    0
+  Leaf Cell Count:                          224
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:              720
+  Total DRC Cost:                          0.00
+  ---------------------------------------------
+
+1

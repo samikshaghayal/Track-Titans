@@ -1,0 +1,65 @@
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : railway_top
+Version: U-2022.12-SP3
+Date   : Mon Sep  7 07:02:52 2026
+****************************************
+
+
+
+   min_delay/hold ('clk' group)
+
+   Endpoint                                                  Slack
+   -----------------------------------------------------------------
+   U1/error_flag_reg/D                                       -0.03  (VIOLATED)
+   U4/route_valid_reg/D                                      -0.03  (VIOLATED)
+   U12/blocked_route_reg[0]/D                                -0.03  (VIOLATED)
+   U10/train_count_reg[5]/D                                  -0.03  (VIOLATED)
+   U_FIFO/count_reg[4]/D                                     -0.03  (VIOLATED)
+   U4/current_state_reg[0]/D                                 -0.03  (VIOLATED)
+   U10/train_count_reg[0]/D                                  -0.03  (VIOLATED)
+   U8/route_locked_reg/D                                     -0.02  (VIOLATED)
+   U10/train_count_reg[4]/D                                  -0.02  (VIOLATED)
+   U1/current_state_reg[0]/D                                 -0.02  (VIOLATED)
+   U10/train_count_reg[2]/D                                  -0.02  (VIOLATED)
+   U1/current_state_reg[2]/D                                 -0.02  (VIOLATED)
+   U9/move_train_reg/D                                       -0.02  (VIOLATED)
+   U10/train_count_reg[7]/D                                  -0.02  (VIOLATED)
+   U_FIFO/count_reg[1]/D                                     -0.02  (VIOLATED)
+   U7/switch_left_reg/D                                      -0.02  (VIOLATED)
+   U6/signal_green_reg/D                                     -0.02  (VIOLATED)
+   U4/current_state_reg[1]/D                                 -0.02  (VIOLATED)
+   U10/train_count_reg[1]/D                                  -0.02  (VIOLATED)
+   U10/train_count_reg[3]/D                                  -0.02  (VIOLATED)
+   U3/fifo_read_enable_reg/D                                 -0.02  (VIOLATED)
+   U_FIFO/count_reg[0]/D                                     -0.02  (VIOLATED)
+   U4/platform_number_reg[0]/D                               -0.02  (VIOLATED)
+   U5/safe_platform_reg[0]/D                                 -0.02  (VIOLATED)
+   U11/route_safe_reg/D                                      -0.02  (VIOLATED)
+   U5/safe_route_reg[0]/D                                    -0.02  (VIOLATED)
+   U11/conflict_route_reg[0]/D                               -0.02  (VIOLATED)
+   U11/conflict_detected_reg/D                               -0.02  (VIOLATED)
+   U6/signal_red_reg/D                                       -0.02  (VIOLATED)
+   U_FIFO/count_reg[2]/D                                     -0.02  (VIOLATED)
+   U10/train_count_reg[6]/D                                  -0.02  (VIOLATED)
+   U1/request_valid_reg/D                                    -0.02  (VIOLATED)
+   U3/selected_valid_reg/D                                   -0.02  (VIOLATED)
+   U5/safety_error_reg/D                                     -0.02  (VIOLATED)
+   U1/current_state_reg[1]/D                                 -0.02  (VIOLATED)
+   U_FIFO/count_reg[3]/D                                     -0.02  (VIOLATED)
+   U12/deadlock_detected_reg/D                               -0.02  (VIOLATED)
+   U5/safe_valid_reg/D                                       -0.01  (VIOLATED)
+
+
+   min_capacitance
+
+                             Required        Actual
+   Pin                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   U6/signal_red_reg/Q          0.00           0.00           0.00  (VIOLATED: increase significant digits)
+   U7/switch_left_reg/Q         0.00           0.00           0.00  (VIOLATED: increase significant digits)
+
+
+1

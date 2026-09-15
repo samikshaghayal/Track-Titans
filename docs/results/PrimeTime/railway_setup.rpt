@@ -1,0 +1,15 @@
+****************************************
+Report : timing
+	-path_type full_clock_expanded
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 20
+	-sort_by slack
+Design : railway_top
+Version: U-2022.12-SP3
+Date   : Mon Sep  7 07:02:52 2026
+****************************************
+
+No paths with slack less than 0.00.
+
+1

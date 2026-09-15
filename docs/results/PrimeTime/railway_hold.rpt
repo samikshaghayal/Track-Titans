@@ -1,0 +1,647 @@
+****************************************
+Report : timing
+	-path_type full_clock_expanded
+	-delay_type min
+	-slack_lesser_than 0.00
+	-max_paths 20
+	-sort_by slack
+Design : railway_top
+Version: U-2022.12-SP3
+Date   : Mon Sep  7 07:02:52 2026
+****************************************
+
+
+  Startpoint: U1/current_state_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1/error_flag_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U1/current_state_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       0.00 r
+  U1/current_state_reg[0]/QN (SAEDRVT05_FDP_X1_FA)        0.01       0.01 r
+  U517/OUT (SAEDRVT05_NR3_X1_FA)                          0.00       0.02 f
+  U1/error_flag_reg/D (SAEDRVT05_FDP_X1_FA)               0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U1/error_flag_reg/CLK (SAEDRVT05_FDP_X1_FA)                        0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: U4/current_state_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U4/route_valid_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U4/current_state_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       0.00 r
+  U4/current_state_reg[1]/QN (SAEDRVT05_FDP_X1_FA)        0.02       0.02 r
+  U518/OUT (SAEDRVT05_NR3_X1_FA)                          0.00       0.02 f
+  U4/route_valid_reg/D (SAEDRVT05_FDP_X1_FA)              0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U4/route_valid_reg/CLK (SAEDRVT05_FDP_X1_FA)                       0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: U4/platform_number_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U12/blocked_route_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U4/platform_number_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)     0.00       0.00 r
+  U4/platform_number_reg[0]/QN (SAEDRVT05_FDP_X1_FA)      0.02       0.02 r
+  U462/OUT (SAEDRVT05_NR2_X1_FA)                          0.01       0.02 f
+  U12/blocked_route_reg[0]/D (SAEDRVT05_FDP_X1_FA)        0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U12/blocked_route_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)                 0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: U10/train_count_reg[5]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U10/train_count_reg[5]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U10/train_count_reg[5]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       0.00 r
+  U10/train_count_reg[5]/QN (SAEDRVT05_FDP_X1_FA)         0.01       0.01 f
+  U414/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U412/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U10/train_count_reg[5]/D (SAEDRVT05_FDP_X1_FA)          0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U10/train_count_reg[5]/CLK (SAEDRVT05_FDP_X1_FA)                   0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: U_FIFO/count_reg[4]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_FIFO/count_reg[4]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_FIFO/count_reg[4]/CLK (SAEDRVT05_FDP_X1_FA)           0.00       0.00 r
+  U_FIFO/count_reg[4]/QN (SAEDRVT05_FDP_X1_FA)            0.01       0.01 f
+  U392/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U390/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U_FIFO/count_reg[4]/D (SAEDRVT05_FDP_X1_FA)             0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U_FIFO/count_reg[4]/CLK (SAEDRVT05_FDP_X1_FA)                      0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: U4/current_state_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U4/current_state_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U4/current_state_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       0.00 r
+  U4/current_state_reg[0]/Q (SAEDRVT05_FDP_X1_FA)         0.02       0.02 r
+  U529/OUT (SAEDRVT05_NR3_X1_FA)                          0.00       0.02 f
+  U4/current_state_reg[0]/D (SAEDRVT05_FDP_X1_FA)         0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U4/current_state_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)                  0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: U10/train_count_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U10/train_count_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U10/train_count_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       0.00 r
+  U10/train_count_reg[0]/QN (SAEDRVT05_FDP_X1_FA)         0.01       0.01 f
+  U383/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U381/OUT (SAEDRVT05_ND2_X1_FA)                          0.01       0.02 f
+  U10/train_count_reg[0]/D (SAEDRVT05_FDP_X1_FA)          0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U10/train_count_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)                   0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: U12/deadlock_detected_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U8/route_locked_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U12/deadlock_detected_reg/CLK (SAEDRVT05_FDP_X1_FA)     0.00       0.00 r
+  U12/deadlock_detected_reg/Q (SAEDRVT05_FDP_X1_FA)       0.02       0.02 r
+  U520/OUT (SAEDRVT05_NR3_X1_FA)                          0.00       0.02 f
+  U8/route_locked_reg/D (SAEDRVT05_FDP_X1_FA)             0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U8/route_locked_reg/CLK (SAEDRVT05_FDP_X1_FA)                      0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U10/train_count_reg[4]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U10/train_count_reg[4]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U10/train_count_reg[4]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       0.00 r
+  U10/train_count_reg[4]/QN (SAEDRVT05_FDP_X1_FA)         0.02       0.02 f
+  U387/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U386/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U10/train_count_reg[4]/D (SAEDRVT05_FDP_X1_FA)          0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U10/train_count_reg[4]/CLK (SAEDRVT05_FDP_X1_FA)                   0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U1/current_state_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1/current_state_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U1/current_state_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       0.00 r
+  U1/current_state_reg[0]/Q (SAEDRVT05_FDP_X1_FA)         0.02       0.02 r
+  U540/OUT (SAEDRVT05_NR3_X1_FA)                          0.00       0.02 f
+  U1/current_state_reg[0]/D (SAEDRVT05_FDP_X1_FA)         0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U1/current_state_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)                  0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U10/train_count_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U10/train_count_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U10/train_count_reg[2]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       0.00 r
+  U10/train_count_reg[2]/QN (SAEDRVT05_FDP_X1_FA)         0.02       0.02 f
+  U416/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U415/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U10/train_count_reg[2]/D (SAEDRVT05_FDP_X1_FA)          0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U10/train_count_reg[2]/CLK (SAEDRVT05_FDP_X1_FA)                   0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U1/current_state_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U1/current_state_reg[2]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U1/current_state_reg[2]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       0.00 r
+  U1/current_state_reg[2]/Q (SAEDRVT05_FDP_X1_FA)         0.02       0.02 r
+  U535/OUT (SAEDRVT05_NR3_X1_FA)                          0.00       0.02 f
+  U1/current_state_reg[2]/D (SAEDRVT05_FDP_X1_FA)         0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U1/current_state_reg[2]/CLK (SAEDRVT05_FDP_X1_FA)                  0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U12/deadlock_detected_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U9/move_train_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U12/deadlock_detected_reg/CLK (SAEDRVT05_FDP_X1_FA)     0.00       0.00 r
+  U12/deadlock_detected_reg/Q (SAEDRVT05_FDP_X1_FA)       0.02       0.02 r
+  U515/OUT (SAEDRVT05_NR3_X1_FA)                          0.00       0.02 f
+  U9/move_train_reg/D (SAEDRVT05_FDP_X1_FA)               0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U9/move_train_reg/CLK (SAEDRVT05_FDP_X1_FA)                        0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U10/train_count_reg[7]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U10/train_count_reg[7]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U10/train_count_reg[7]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       0.00 r
+  U10/train_count_reg[7]/QN (SAEDRVT05_FDP_X1_FA)         0.02       0.02 f
+  U420/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U418/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U10/train_count_reg[7]/D (SAEDRVT05_FDP_X1_FA)          0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U10/train_count_reg[7]/CLK (SAEDRVT05_FDP_X1_FA)                   0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U_FIFO/count_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_FIFO/count_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_FIFO/count_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)           0.00       0.00 r
+  U_FIFO/count_reg[1]/QN (SAEDRVT05_FDP_X1_FA)            0.02       0.02 f
+  U369/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U367/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U_FIFO/count_reg[1]/D (SAEDRVT05_FDP_X1_FA)             0.00       0.02 f
+  data arrival time                                                  0.02
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U_FIFO/count_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)                      0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.02
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U5/safe_platform_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U7/switch_left_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U5/safe_platform_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       0.00 r
+  U5/safe_platform_reg[0]/Q (SAEDRVT05_FDP_X1_FA)         0.02       0.02 f
+  U516/OUT (SAEDRVT05_AN2_X1_FA)                          0.01       0.03 f
+  U7/switch_left_reg/D (SAEDRVT05_FDP_X1_FA)              0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U7/switch_left_reg/CLK (SAEDRVT05_FDP_X1_FA)                       0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.03
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U11/conflict_route_reg[0]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U6/signal_green_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U11/conflict_route_reg[0]/CLK (SAEDRVT05_FDP_X1_FA)     0.00       0.00 r
+  U11/conflict_route_reg[0]/Q (SAEDRVT05_FDP_X1_FA)       0.02       0.02 r
+  U429/OUT (SAEDRVT05_NR3_X1_FA)                          0.01       0.03 f
+  U6/signal_green_reg/D (SAEDRVT05_FDP_X1_FA)             0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U6/signal_green_reg/CLK (SAEDRVT05_FDP_X1_FA)                      0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.03
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U4/current_state_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U4/current_state_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U4/current_state_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)       0.00       0.00 r
+  U4/current_state_reg[1]/QN (SAEDRVT05_FDP_X1_FA)        0.02       0.02 f
+  U440/OUT (SAEDRVT05_ND3_X1_FA)                          0.01       0.02 r
+  U441/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.03 f
+  U4/current_state_reg[1]/D (SAEDRVT05_FDP_X1_FA)         0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U4/current_state_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)                  0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.03
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U10/train_count_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U10/train_count_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U10/train_count_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       0.00 r
+  U10/train_count_reg[1]/QN (SAEDRVT05_FDP_X1_FA)         0.01       0.01 f
+  U376/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U374/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U480/OUT (SAEDRVT05_INV_X1_FA)                          0.00       0.03 r
+  U10/train_count_reg[1]/D (SAEDRVT05_FDP_X1_FA)          0.00       0.03 r
+  data arrival time                                                  0.03
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U10/train_count_reg[1]/CLK (SAEDRVT05_FDP_X1_FA)                   0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.03
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: U10/train_count_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U10/train_count_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U10/train_count_reg[3]/CLK (SAEDRVT05_FDP_X1_FA)        0.00       0.00 r
+  U10/train_count_reg[3]/QN (SAEDRVT05_FDP_X1_FA)         0.01       0.01 f
+  U372/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 r
+  U370/OUT (SAEDRVT05_ND2_X1_FA)                          0.00       0.02 f
+  U477/OUT (SAEDRVT05_INV_X1_FA)                          0.00       0.03 r
+  U10/train_count_reg[3]/D (SAEDRVT05_FDP_X1_FA)          0.00       0.03 r
+  data arrival time                                                  0.03
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.05       0.05
+  U10/train_count_reg[3]/CLK (SAEDRVT05_FDP_X1_FA)                   0.05 r
+  library hold time                                      -0.00       0.05
+  data required time                                                 0.05
+  ------------------------------------------------------------------------------
+  data required time                                                 0.05
+  data arrival time                                                 -0.03
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+Warning: report_timing has satisfied the max_paths criteria. There are 18 further endpoints which have paths of interest with slack less than     0.00 that were not considered when generating this report. (UITE-502)
+
+1
